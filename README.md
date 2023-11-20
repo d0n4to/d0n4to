@@ -56,26 +56,6 @@
 
 <br clear="both">
 
-name: Generate snake animation
-
-on:
-  schedule: # execute every 12 hours
-    - cron: "* */12 * * *"
-
-  workflow_dispatch:
-
-  push:
-    branches:
-    - master
-
-jobs:
-  generate:
-    permissions:
-      contents: write
-    runs-on: ubuntu-latest
-    timeout-minutes: 5
-
-   
 
 <img src="https://raw.githubusercontent.com/d0n4to/d0n4to/output/snake.svg" alt="Snake animation" />
 
